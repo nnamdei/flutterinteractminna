@@ -28,4 +28,5 @@ Widget _buildRoute({
     case '/loginPage':
       return LoginPage();
       break;
-  }}
+  }
+}

@@ -7,7 +7,7 @@ void main() {
       title: "Flutter Interact Minna 2019",
       theme: ThemeData(
           fontFamily: 'Helvetica Neu',
-          primaryColor: Color.fromRGBO(137, 72, 252, 1)),
+          primaryColor:  Color.fromRGBO(44, 138, 248, 1),),
       debugShowCheckedModeBanner: false,
       onGenerateRoute: (settings) {
         return MaterialPageRoute(

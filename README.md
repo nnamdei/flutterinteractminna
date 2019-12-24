@@ -1,16 +1,15 @@
 # flutterinteract_minna
 
-A new Flutter project.
+A Flutter project put together to assess our knowledge of Flutter and use of Adobe XD collaboration tool during Flutter Interact 2019 Party (21/12/2019) in Minna, Niger State.
 
-## Getting Started
+Feel free to contribute to this project as it is not a finished work.
 
-This project is a starting point for a Flutter application.
+Check out the Adobe XD link and password below;
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+ - [Adobe XD Link](  https://xd.adobe.com/view/537ed5a9-6afb-44f2-5ef0-d65107611436-254f/)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-  password: flutterInterractive19
+
+ Credits to [@abdulqaharemjay]( https://twitter.com/abdulqaharemjay) for the User Interface design
+
