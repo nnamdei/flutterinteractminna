@@ -52,23 +52,18 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Stack(
                 children: <Widget>[
-                  Text('Email',
-                      style: TextStyle(
-                          color: Color.fromRGBO(87, 87, 87, 1),
-                          fontWeight: FontWeight.normal,
-                          fontSize: 12)),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 12.0),
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                          hintText: 'flutterinteractminna@gmail.com',
-                          hintStyle: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal,
-                              color: Color.fromRGBO(7, 29, 54, 1))),
-                      keyboardType: TextInputType.emailAddress,
+                  TextField(
+                    keyboardType: TextInputType.emailAddress,
+                    obscureText: false,
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(
+                        Icons.email,
+                      ),
+                      border: OutlineInputBorder(),
+                      labelText: 'email',
+                      hintText: 'flutterinteractminna@gmail.com',
                     ),
-                  )
+                  ),
                 ],
               ),
               SizedBox(
@@ -76,23 +71,16 @@ class _LoginPageState extends State<LoginPage> {
               ),
               Stack(
                 children: <Widget>[
-                  Text('Password',
-                      style: TextStyle(
-                          color: Color.fromRGBO(87, 87, 87, 1),
-                          fontWeight: FontWeight.normal,
-                          fontSize: 12)),
-                  Padding(
-                    padding: const EdgeInsets.only(top: 12.0),
-                    child: TextFormField(
-                      decoration: InputDecoration(
-                          hintText: '*********',
-                          hintStyle: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.normal,
-                              color: Color.fromRGBO(7, 29, 54, 1))),
-                      obscureText: true,
+                  TextField(
+                    keyboardType: TextInputType.visiblePassword,
+                    obscureText: true,
+                    decoration: InputDecoration(
+                      prefixIcon: Icon(Icons.lock),
+                      border: OutlineInputBorder(),
+                      labelText: 'password',
+                      hintText: '******',
                     ),
-                  )
+                  ),
                 ],
               ),
               SizedBox(
@@ -102,6 +90,9 @@ class _LoginPageState extends State<LoginPage> {
                 height: 48,
                 width: double.infinity,
                 child: RaisedButton(
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(10.0),
+                  ),
                   color: Color.fromRGBO(44, 138, 248, 1),
                   elevation: 0.0,
                   onPressed: () {},
