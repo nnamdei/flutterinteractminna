@@ -31,11 +31,13 @@ class Onboarding extends StatelessWidget {
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.01,
             ),
-            Text('What\'s New?',
-                style: TextStyle(
-                    color: Color.fromRGBO(44, 138, 248, 1),
-                    fontWeight: FontWeight.w500,
-                    fontSize: 36)),
+            Text(
+              'What\'s New?',
+              style: TextStyle(
+                  color: Color.fromRGBO(44, 138, 248, 1),
+                  fontWeight: FontWeight.w500,
+                  fontSize: 36),
+            ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.07,
             ),
@@ -84,12 +86,13 @@ class Onboarding extends StatelessWidget {
                       fontWeight: FontWeight.bold,
                       fontSize: 16)),
               subtitle: Text(
-                  'Run a codelab from your mobile phone and\nshare with the world.',
-                  style: TextStyle(
-                      color: Color.fromRGBO(118, 118, 118, 1),
-                      fontWeight: FontWeight.normal,
-                      height: 1.5,
-                      fontSize: 12)),
+                'Run a codelab from your mobile phone and\nshare with the world.',
+                style: TextStyle(
+                    color: Color.fromRGBO(118, 118, 118, 1),
+                    fontWeight: FontWeight.normal,
+                    height: 1.5,
+                    fontSize: 12),
+              ),
             ),
             SizedBox(
               height: MediaQuery.of(context).size.height * 0.1,
@@ -98,16 +101,21 @@ class Onboarding extends StatelessWidget {
               height: 48,
               width: MediaQuery.of(context).size.width,
               child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
                 color: Color.fromRGBO(44, 138, 248, 1),
                 onPressed: () {
                   Navigator.of(context).pushNamed('/loginPage');
                 },
-                child: Text('Sign in ',
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w500,
-                        height: 1.5,
-                        fontSize: 16)),
+                child: Text(
+                  'Sign in ',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w500,
+                      height: 1.5,
+                      fontSize: 16),
+                ),
               ),
             ),
             SizedBox(
@@ -117,19 +125,28 @@ class Onboarding extends StatelessWidget {
               height: 48,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                  border: Border.all(
-                      color: Color.fromRGBO(44, 138, 248, 1), width: 1)),
+                border: Border.all(
+                  color: Color.fromRGBO(44, 138, 248, 1),
+                  width: 2,
+                ),
+              ),
               child: RaisedButton(
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0),
+                ),
                 color: Colors.white,
                 elevation: 0.0,
-                onPressed: () {},
-
-                child: Text('Sign Up',
-                    style: TextStyle(
-                        color: Color.fromRGBO(44, 138, 248, 1),
-                        fontWeight: FontWeight.w500,
-                        height: 1.5,
-                        fontSize: 16)),
+                onPressed: () {
+                  Navigator.of(context).pushNamed('/signUpPage');
+                },
+                child: Text(
+                  'Sign Up',
+                  style: TextStyle(
+                      color: Color.fromRGBO(44, 138, 248, 1),
+                      fontWeight: FontWeight.w500,
+//                      height: 1.5,
+                      fontSize: 16),
+                ),
               ),
             )
           ],

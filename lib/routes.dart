@@ -1,10 +1,12 @@
 import 'screens/login.dart';
 import 'screens/onboarding.dart';
 import 'package:flutter/material.dart';
+import 'screens/signup.dart';
 
 final routes = {
   '/': (BuildContext context) => Onboarding(),
   '/loginPage': (BuildContext context) => LoginPage(),
+  '/signUpPage': (BuildContext context) => SignUpPage(),
 };
 
 Widget makeRoute(
@@ -27,6 +29,9 @@ Widget _buildRoute({
       break;
     case '/loginPage':
       return LoginPage();
+      break;
+    case '/signUpPage':
+      return SignUpPage();
       break;
   }
 }
